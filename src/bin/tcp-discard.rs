@@ -17,7 +17,7 @@ fn main() -> Result<(), Box<std::error::Error>> {
         .incoming()
         .map_err(|e| eprintln!("failed to accept socket; error = {:?}", e))
         .for_each(|socket| {
-            let peer_addr = socket.peer_addr().unwrap().to_string();
+            let peer_addr = socket.peer_addr().unwrap();
             eprintln!("New peer connection: {}", peer_addr);
             let (reader, _) = socket.split();
             let discard = io::copy(reader, sink()).then(move |result| {
