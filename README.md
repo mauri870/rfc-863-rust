@@ -1,6 +1,6 @@
 # RFC 863 implemented in Rust
 
-[RFC 863](https://tools.ietf.org/html/rfc863) defines a discard protocol, basically a TCP/UDP service that listens on port 9 and throws away any data it receives.
+[RFC 863](https://tools.ietf.org/html/rfc863) defines a discard protocol, that's it, a TCP/UDP service that listens on port 9 and throws away any data it receives.
 
 ## Compilation
 
