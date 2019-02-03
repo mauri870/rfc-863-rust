@@ -26,10 +26,10 @@ impl Future for Server {
 }
 
 fn main() -> Result<(), Box<std::error::Error>> {
-    let addr = "127.0.0.1:9".parse::<SocketAddr>()?;
+    let addr = "0.0.0.0:9".parse::<SocketAddr>()?;
 
     let socket = UdpSocket::bind(&addr)?;
-    println!("Listening on: {}", socket.local_addr()?);
+    eprintln!("Listening on: {}", socket.local_addr()?);
 
     let server = Server {
         socket: socket,
