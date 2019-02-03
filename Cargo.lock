@@ -373,6 +373,14 @@ dependencies = [
 ]
 
 [[package]]
+name = "rfc-863-rust"
+version = "0.1.0"
+dependencies = [
+ "futures 0.1.25 (registry+https://github.com/rust-lang/crates.io-index)",
+ "tokio 0.1.15 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
 name = "rustc_version"
 version = "0.2.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -415,13 +423,6 @@ dependencies = [
 name = "stable_deref_trait"
 version = "1.1.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-
-[[package]]
-name = "tcp-RFC-863-rust"
-version = "0.1.0"
-dependencies = [
- "tokio 0.1.15 (registry+https://github.com/rust-lang/crates.io-index)",
-]
 
 [[package]]
 name = "tokio"
